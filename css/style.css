@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "Source Code Pro";
+}
+header .nav_bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #263343;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 12px;
+}
+header .navbar_logo {
+  font-size: 24px;
+  color: white;
+}
+header .navbar_logo i {
+  color: #d49466;
+}
+header .navbar_meun {
+  display: flex;
+  padding-left: 0;
+}
+header .navbar_meun li {
+  padding: 8px 12px;
+}
+header .navbar_meun li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+header .icon {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-left: 0;
+}
+header .icon li {
+  padding: 8px 8px;
+}
+.nabar_toogleBtn {
+  position: absolute;
+  right: 3%;
+  top: 0;
+  padding-top: 8px;
+  font-size: 24px;
+  display: none;
+  color: #d49466;
+}
+
+header #screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+header #textbox {
+  color: white;
+  position: absolute;
+  left: 8%;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header #textbox span {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  header .navbar_meun {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  header .navbar_meun li {
+    width: 100%;
+    text-align: center;
+  }
+  header .icon {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 8px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: heigth 0.5s ease;
+  }
+  header .navbar_meun {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.9s ease, heigth 0.5s ease;
+  }
+
+  .navbar_meun.visible {
+    opacity: 1;
+    height: auto;
+  }
+  .icon.visible {
+    display: flex;
+    opacity: 1;
+    height: auto;
+  }
+  .nabar_toogleBtn {
+    display: block;
+  }
+}
