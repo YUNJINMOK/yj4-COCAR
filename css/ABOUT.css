@@ -60,22 +60,44 @@ header .icon li {
 }
 
 header #screen {
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  background-image: url(../img/aboutback1.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 header #textbox {
-  color: white;
-  position: absolute;
-  left: 8%;
-  bottom: 15%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30%;
   gap: 15px;
+  max-width: 1300px;
+  width: 100%;
+  color: white;
 }
 header #textbox span {
-  font-size: 1.8em;
+  font-size: 3rem;
   font-weight: 700;
+}
+section #content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+section #content .textbox {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #d49466;
+}
+section #content .textbox h2 {
+  text-align: center;
+  padding-top: 10%;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,5 +143,12 @@ header #textbox span {
   }
   .nabar_toogleBtn {
     display: block;
+  }
+  header #textbox {
+    padding-bottom: 50%;
+  }
+  header #textbox span {
+    font-size: 2rem;
+    padding: 4px;
   }
 }

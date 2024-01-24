@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -13,6 +14,28 @@ li {
 body {
   font-family: "Source Code Pro";
 }
+.textbox span {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid lightgray;
+  border-radius: 30px;
+  padding: 4px;
+}
+.btn:hover {
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
 header .nav_bar {
   position: relative;
   width: 100%;
@@ -64,61 +87,110 @@ header #screen {
   width: 100%;
   height: 100vh;
 }
+header #screen video {
+  filter: brightness(0.5);
+}
 header #textbox {
   color: white;
   position: absolute;
-  left: 7%;
-  bottom: 20%;
+  left: 10%;
+  top: 30%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+header #textbox button {
+  margin-left: 20px;
 }
 header #textbox span {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 section article {
   width: 100%;
   height: 100vh;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
-section #InformationUse {
-  background-image: url(../img/section\ Information.jpg);
-}
-.textbox {
-  max-width: 500px;
+
+section .textbox {
+  max-width: 1300px;
   width: 100%;
-  height: 500px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-  margin-left: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
 }
-.textbox span {
-  padding: 8px 12px;
-  font-size: 1.9em;
-  font-weight: 700;
+section #InformationUse {
+  position: relative;
 }
-#InformationUse {
-  display: flex;
-  justify-content: end;
-  align-items: baseline;
-}
-#InformationUse div {
-  justify-content: center;
+section #InformationUse .textbox {
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  top: 30%;
 }
 section #MOBILITYTECH {
-  background-image: url(../img/MOBILITYTECH1.png);
-  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
-section #MOBILITYTECH div {
-  justify-content: flex-start;
+section #MOBILITYTECH .textbox {
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+section #carlist {
+  position: relative;
+}
+section #carlist .textbox {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+footer .textbox {
+  max-width: 1300px;
+  width: 100%;
+  padding-top: 2%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .textbox ul {
+  display: flex;
+  gap: 30px;
+}
+footer .textbox ul li {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+footer .textbox ul li:last-child {
+  border-right: 0;
+}
+footer .textbox hr {
+  margin-top: 20px;
+}
+footer .textbox a {
+  color: black;
+  font-size: large;
+  font-weight: 700;
+}
+footer .textbox h2 {
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -164,5 +236,35 @@ section #MOBILITYTECH div {
   }
   .nabar_toogleBtn {
     display: block;
+  }
+  header #textbox {
+    top: 40%;
+    left: 5%;
+  }
+  header #textbox span {
+    font-size: 1.8rem;
+    padding: 4px;
+  }
+  section #InformationUse .textbox {
+    top: 40%;
+    left: 3%;
+  }
+  .textbox span {
+    font-size: 1.8rem;
+    padding: 4px;
+  }
+  section #MOBILITYTECH .textbox {
+    top: 40%;
+    left: 3%;
+  }
+  section #carlist .textbox {
+    top: 40%;
+    left: 3%;
+  }
+  footer .textbox {
+    padding: 20px;
+  }
+  footer .textbox a {
+    font-size: 0.8rem;
   }
 }
