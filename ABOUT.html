@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/247e9f18da.js"
       crossorigin="anonymous"
@@ -18,7 +24,8 @@
   </head>
   <body>
     <header>
-      <nav class="nav_bar">
+      <!-- 헤더 네이게이션바 -->
+      <nav id="nav_bar" class="nav_bar">
         <div class="navbar_logo">
           <i class="fa-brands fa-accusoft"></i>
           <a href="index.html">COCAR</a>
@@ -37,6 +44,7 @@
           <i class="fa-solid fa-bars"></i>
         </a>
       </nav>
+      <!-- 헤더 배경 -->
       <div id="screen">
         <div id="textbox">
           <span>모든 사람이 자유롭고 행복하게</span>
@@ -45,19 +53,122 @@
       </div>
     </header>
     <section>
-      <article>
-        <div id="content">
-          <div class="textbox">
-            <h2>쏘카다운 방식으로 이동을 혁신합니다</h2>
-            <div class="imgbox">
-              <div class="img">
-                <img src="./img/serviceCenter1.jpg" alt="img1" />
-              </div>
+      <div id="content">
+        <div class="textbox">
+          <h2>코카다운 방식으로 이동을 혁신합니다</h2>
+          <div class="imgbox">
+            <div class="img">
+              <img src="./img/serviceCenter1.jpg" alt="img1" />
             </div>
+            <h3>이용자를 중심으로 생각합니다</h3>
+            <p>
+              이용자에게 꼭 필요한 이동 서비스를 제공하고 더 나은 선택을
+              제안하는 것이 기업에도 더 나은 방향이라고 믿습니다.
+            </p>
+          </div>
+          <div class="imgbox">
+            <div class="img">
+              <img src="./img/abuot_c_2.jpg" alt="img1" />
+            </div>
+            <h3>임팩트가 더 큰 일을 우선합니다</h3>
+            <p>
+              새로운 이동의 미래와 가치를 만드는 데 보다 크게 기여할 수 있는
+              일을 먼저 합니다.
+            </p>
+          </div>
+          <div class="imgbox">
+            <div class="img">
+              <img src="./img/abou-c-3.jpg" alt="img1" />
+            </div>
+            <h3>완전히 새로운 방식으로 도전합니다</h3>
+            <p>
+              문제를 새롭게 보고 관습에 도전합니다. 익숙하고 편한 방식에
+              매몰되지 않고 실패하더라도 과감히 도전합니다.
+            </p>
+          </div>
+          <div class="imgbox">
+            <div class="img">
+              <img src="./img/about-c-4.jpg" alt="img1" />
+            </div>
+            <h3>One COCAR를 지향합니다</h3>
+            <p>
+              일의 맥락과 흐름을 서로 공유하며, 같은 목표를 향해 이동합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <article id="MOBILITY">
+        <div class="MOBILITYbox">
+          <!-- 1.텍스트 -->
+          <div class="MOBILITY_textbox">
+            <span>스트리밍 모빌리티</span>
+            <p>
+              스트리밍 서비스로 제약 없이 음악을 즐기는 것처럼 이동 수단을
+              소유하지 않아도, 누구나 언제 어디서든 자유롭게 이동할 수 있는
+              모빌리티 서비스를 실현합니다.
+            </p>
+          </div>
+          <!-- 2.이미지 -->
+          <div class="MOBILITY_imgbox">
+            <img src="./img/about1.jpg" alt="abotimg1" />
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="MOBILITYbox">
+          <!-- 1.이미지 -->
+          <div class="MOBILITY_imgbox">
+            <img src="./img/about2.jpg" alt="abotimg1" />
+          </div>
+          <!-- 2.텍스트 -->
+          <div class="MOBILITY_textbox">
+            <span>경험 플랫폼</span>
+            <p>
+              자동차를 나만의 경험 공간으로 구현해 이용자가 자가용에서 얻을 수
+              있는 경험, 그 이상을 제시합니다. 이동하는 순간뿐 아니라 출발
+              전부터 도착 이후까지 총체적인 이동 경험을 매끄럽게 디자인합니다.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="MOBILITYbox">
+          <!-- 1.텍스트 -->
+          <div class="MOBILITY_textbox">
+            <span>테크 플랫폼</span>
+            <p>
+              새로운 이동 기술을 가장 먼저 서비스화 하는 모빌리티 플랫폼을
+              지향합니다. 자동차와 사람의 데이터를 종합적으로 활용해 이동 수단을
+              보다 체계적으로 운영하고, AI 기술로 더 안전한 이동 서비스를
+              제공합니다.
+            </p>
+          </div>
+          <!-- 2.이미지 -->
+          <div class="MOBILITY_imgbox">
+            <img src="./img/aboy3.jpg" alt="abotimg1" />
           </div>
         </div>
       </article>
     </section>
+    <footer>
+      <div class="textbox">
+        <h2>COCAR</h2>
+        <hr />
+        <ul>
+          <li><a href="#">오시는길</a></li>
+
+          <li><a href="#">문의하기</a></li>
+
+          <li><a href="#">앱 다운로드</a></li>
+
+          <li><a href="#">코카 윤리강령</a></li>
+        </ul>
+        <h4>© 2024 COCAR All rights reserved.</h4>
+      </div>
+    </footer>
     <script src="./toogle.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./EventScroll.js"></script>
   </body>
 </html>

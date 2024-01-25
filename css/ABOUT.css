@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: #ffffff;
@@ -13,6 +16,9 @@ li {
 body {
   font-family: "Source Code Pro";
 }
+section {
+  font-family: "Noto Sans KR", sans-serif;
+}
 header .nav_bar {
   position: relative;
   width: 100%;
@@ -21,6 +27,8 @@ header .nav_bar {
   justify-content: space-around;
   align-items: center;
   padding: 8px 12px;
+  position: fixed;
+  transition: top 0.3s;
 }
 header .navbar_logo {
   font-size: 24px;
@@ -79,24 +87,153 @@ header #textbox {
   width: 100%;
   color: white;
 }
+
 header #textbox span {
   font-size: 3rem;
   font-weight: 700;
 }
+
 section #content {
   width: 100%;
-  height: 100vh;
+  height: 1450px;
   display: flex;
   justify-content: center;
 }
 section #content .textbox {
-  max-width: 1200px;
+  max-width: 1250px;
   width: 100%;
-  background-color: #d49466;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 section #content .textbox h2 {
   text-align: center;
-  padding-top: 10%;
+  padding: 10%;
+  font-size: 3rem;
+}
+section .imgbox {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  padding-bottom: 52px;
+}
+section .img {
+  width: 100%;
+  height: 252px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+section .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section .imgbox p,
+h3 {
+  color: black;
+}
+section .imgbox h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section .imgbox p {
+  font-weight: 510;
+  font-size: 1.2rem;
+}
+section article {
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotate(-720deg);
+}
+section article .MOBILITYbox {
+  max-width: 1300px;
+  height: 412px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section article .MOBILITYbox .MOBILITY_textbox {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 100px;
+  gap: 20px;
+}
+section article .MOBILITYbox .MOBILITY_textbox:nth-child(2) {
+  padding-left: 100px;
+  padding-right: 0;
+}
+section article .MOBILITYbox .MOBILITY_textbox span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+section article .MOBILITYbox .MOBILITY_textbox p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+section article .MOBILITYbox .MOBILITY_imgbox {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+section article .MOBILITYbox .MOBILITY_imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+footer .textbox {
+  max-width: 1300px;
+  width: 100%;
+  padding-top: 2%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .textbox ul {
+  display: flex;
+  gap: 30px;
+}
+footer .textbox ul li {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+footer .textbox ul li:last-child {
+  border-right: 0;
+}
+footer .textbox hr {
+  margin-top: 20px;
+}
+footer .textbox a {
+  color: black;
+  font-size: large;
+  font-weight: 700;
+}
+footer .textbox h2 {
   font-size: 3rem;
 }
 
