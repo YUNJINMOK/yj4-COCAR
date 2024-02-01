@@ -5,6 +5,7 @@
   }
   html {
     scroll-behavior: smooth;
+    
   }
   a {
     text-decoration: none;
@@ -106,6 +107,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
   section article .box .text {
     width: 58%;
@@ -114,9 +116,10 @@
     justify-content: center;
     gap: 20px;
     transition: all 0.9s;
-    transform: translateX(50px);
-    
+    overflow: hidden;
   }
+    
+    
   section article .box .text span {
     font-size: 3rem;
     font-weight: bold;
@@ -236,22 +239,27 @@
       gap: 40px;
     }
     section article .box .text {
-      width: 100%;
+      width: 95%;
+      
     }
+      
+      
+
     section article .box .img {
       width: 100%;
     }
     section article .box .text span {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     section article .box .text p {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
     header #textbox {
       font-size: 2rem;
       width: 100%;
       padding: 4px;
     }
+    
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   footer .textbox {
@@ -282,4 +290,25 @@
     padding: 10px;
   }
 }
-  
+@media screen and (min-width: 200px) and (max-width: 470px) {
+  footer .textbox a {
+    font-size: 0.65rem;
+    
+    
+  }
+  footer .textbox {
+    width: 80%;
+  }
+  footer .textbox h4 {
+    font-size: 0.9rem;
+  }
+  section article .box .text span {
+    font-size: 1.6rem;
+  }
+  section article .box .text p {
+    font-size: 1.3rem;
+  }
+  #textbox span {
+    font-size: 1.6rem;
+  }
+}  

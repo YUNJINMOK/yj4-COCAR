@@ -281,7 +281,13 @@ footer .textbox h2 {
   footer .textbox a {
     font-size: 0.65rem;
     
-    
   }
+  footer .textbox h4 {
+    font-size: 0.9rem;
+  }
+  footer .textbox {
+    width: 80%;
+  }
+    
 
 }

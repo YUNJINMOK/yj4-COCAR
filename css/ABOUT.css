@@ -378,4 +378,7 @@ footer .textbox h2 {
   footer .textbox {
     width: 80%;
   }
+  footer .textbox h4 {
+    font-size: 0.9rem;
+  }
 }
