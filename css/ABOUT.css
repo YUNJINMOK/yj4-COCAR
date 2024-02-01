@@ -293,6 +293,11 @@ footer .textbox h2 {
   section #content {
     height: 2500px;
   }
+  section #content .textbox h2 {
+    font-size: 1.6rem;
+  }
+ 
+  
 
   section .imgbox {
     width: 80%;
@@ -312,6 +317,7 @@ footer .textbox h2 {
     padding-right: 0;
     padding: 30px;
   }
+  
   section article .MOBILITYbox .MOBILITY_imgbox {
     width: 100%;
   }
@@ -344,5 +350,32 @@ footer .textbox h2 {
   }
   section article .MOBILITYbox .MOBILITY_imgbox {
     width: 50%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 470px) {
+  header #textbox span {
+    font-size: 1.6rem;
+  }
+  section #content .textbox h2 {
+    font-size: 1.3rem;
+  }
+  section article .MOBILITYbox .MOBILITY_textbox {
+    width: 90%;
+    
+  }
+  section article .MOBILITYbox .MOBILITY_textbox span {
+    font-size: 1.5rem;
+  }
+  section article .MOBILITYbox .MOBILITY_textbox p {
+    font-size: 1.2rem;
+  }
+  
+  footer .textbox a {
+    font-size: 0.65rem;
+    
+    
+  }
+  footer .textbox {
+    width: 80%;
   }
 }

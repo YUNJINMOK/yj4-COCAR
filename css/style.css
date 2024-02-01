@@ -244,7 +244,7 @@ footer .textbox h2 {
     left: 5%;
   }
   header #textbox span {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 4px;
   }
   section #InformationUse .textbox {
@@ -252,7 +252,7 @@ footer .textbox h2 {
     left: 3%;
   }
   .textbox span {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 4px;
   }
   section #MOBILITYTECH .textbox {
@@ -276,4 +276,12 @@ footer .textbox h2 {
     width: 100%;
     padding-left: 20px;
   }
+}
+@media screen and (min-width: 200px) and (max-width: 470px) {
+  footer .textbox a {
+    font-size: 0.65rem;
+    
+    
+  }
+
 }
