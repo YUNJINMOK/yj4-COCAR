@@ -1,143 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/247e9f18da.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>COCAR</title>
-  </head>
-  <body>
-    <header>
-      <nav id="nav_bar" class="nav_bar">
-        <div class="navbar_logo">
-          <i class="fa-brands fa-accusoft"></i>
-          <a href="#">COCAR</a>
-        </div>
-        <ul class="navbar_meun">
-          <li><a href="ABOUT.html">ABOUT</a></li>
-          <li><a href="Information.html">Information Use</a></li>
-          <li><a href="#">MOBILITY TECH</a></li>
-          <li><a href="#">Car list</a></li>
-        </ul>
-        <ul class="icon">
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-        </ul>
-        <a href="#" class="nabar_toogleBtn">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </nav>
-      <div id="screen">
-        <video
-          autoplay
-          loop
-          playsinline
-          style="
-            position: absolute;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-          "
-        >
-          <source src="./img/main-video.mp4" />
-        </video>
-      </div>
-      <div id="textbox">
-        <button class="btn" onclick="About()">ABOUT</button>
-        <span>모든 사람이 자유롭고 행복하게</span>
-        <span>이동하는 세상을만듭니다</span>
-      </div>
-    </header>
-    <section>
-      <article id="InformationUse">
-        <video
-          autoplay
-          loop
-          playsinline
-          style="
-            position: absolute;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-          "
-        >
-          <source src="./img/main_video2.mp4" />
-        </video>
-        <div class="textbox">
-          <button class="btn" onclick="Information()">InformationUse</button>
-          <span>스마트한 코카 이용안내</span>
-          <span>앱을 열자마자 쉽고 빠르게</span>
-          <span> 스마트한 카셰어링 라이프 시작</span>
-        </div>
-      </article>
-      <article id="MOBILITYTECH">
-        <video
-          autoplay
-          loop
-          playsinline
-          style="
-            position: absolute;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-          "
-        >
-          <source src="./img/main-video3.mp4" />
-        </video>
-        <div class="textbox">
-          <button class="btn" onclick="Click()">MOBILITYTECH</button>
-          <span>기술과 데이터로</span>
-          <span>이동의 문제를 해결합니다</span>
-        </div>
-      </article>
-      <article id="carlist">
-        <video
-          autoplay
-          loop
-          playsinline
-          style="
-            position: absolute;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-          "
-        >
-          <source src="./img/main_video4.mp4" />
-        </video>
-        <div class="textbox">
-          <button class="btn" onclick="Click()">carlist</button>
-          <span>코카에서 다양한차종 과, </span>
-          <span>편리한 이동수단을 만나보세요</span>
-        </div>
-      </article>
-    </section>
-    <footer>
-      <div class="textbox">
-        <h2>COCAR</h2>
-        <hr />
-        <ul>
-          <li><a href="#">오시는길</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/247e9f18da.js" crossorigin="anonymous"></script>
+        <title>COCAR</title>
+    </head>
+    <body>
+        <header>
+            <nav id="nav_bar" class="nav_bar">
+                <div class="navbar_logo">
+                    <i class="fa-brands fa-accusoft"></i>
+                    <a href="#">COCAR</a>
+                </div>
+                <ul class="navbar_meun">
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="Information.html">Information Use</a></li>
+                    <li><a href="#">MOBILITY TECH</a></li>
+                    <li><a href="#">Car list</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+                <a href="#" class="nabar_toogleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+            <div id="screen">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="position: absolute; height: 100vh; width: 100%; object-fit: cover"
+                >
+                    <source src="./img/main-video.mp4" />
+                </video>
+            </div>
+            <div id="textbox">
+                <button class="btn" onclick="About()">ABOUT</button>
+                <span>모든 사람이 자유롭고 행복하게</span>
+                <span>이동하는 세상을만듭니다</span>
+            </div>
+        </header>
+        <section>
+            <article id="InformationUse">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="position: absolute; height: 100vh; width: 100%; object-fit: cover"
+                >
+                    <source src="./img/main_video2.mp4" />
+                </video>
+                <div class="textbox">
+                    <button class="btn" onclick="Information()">InformationUse</button>
+                    <span>스마트한 코카 이용안내</span>
+                    <span>앱을 열자마자 쉽고 빠르게</span>
+                    <span> 스마트한 카셰어링 라이프 시작</span>
+                </div>
+            </article>
+            <article id="MOBILITYTECH">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="position: absolute; height: 100vh; width: 100%; object-fit: cover"
+                >
+                    <source src="./img/main-video3.mp4" />
+                </video>
+                <div class="textbox">
+                    <button class="btn" onclick="Click()">MOBILITYTECH</button>
+                    <span>기술과 데이터로</span>
+                    <span>이동의 문제를 해결합니다</span>
+                </div>
+            </article>
+            <article id="carlist">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="position: absolute; height: 100vh; width: 100%; object-fit: cover"
+                >
+                    <source src="./img/main_video4.mp4" />
+                </video>
+                <div class="textbox">
+                    <button class="btn" onclick="Click()">carlist</button>
+                    <span>코카에서 다양한차종 과, </span>
+                    <span>편리한 이동수단을 만나보세요</span>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="textbox">
+                <h2>COCAR</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">오시는길</a></li>
 
-          <li><a href="#">문의하기</a></li>
+                    <li><a href="#">문의하기</a></li>
 
-          <li><a href="#">앱 다운로드</a></li>
+                    <li><a href="#">앱 다운로드</a></li>
 
-          <li><a href="#">코카 윤리강령</a></li>
-        </ul>
-        <h4>© 2024 COCAR All rights reserved.</h4>
-      </div>
-    </footer>
-    <script src="./toogle.js"></script>
-    <script src="./link.js"></script>
-  </body>
+                    <li><a href="#">코카 윤리강령</a></li>
+                </ul>
+                <h4>© 2024 COCAR All rights reserved.</h4>
+            </div>
+        </footer>
+        <script src="./toogle.js"></script>
+        <script src="./link.js"></script>
+    </body>
 </html>

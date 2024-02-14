@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Information.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/247e9f18da.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>COCAR</title>
-</head>
-<body>
-    <header>
-        <!-- 헤더 네이게이션바 -->
-        <nav id="nav_bar" class="nav_bar">
-          <div class="navbar_logo">
-            <i class="fa-brands fa-accusoft"></i>
-            <a href="index.html">COCAR</a>
-          </div>
-          <ul class="navbar_meun">
-            <li><a href="ABOUT.html">ABOUT</a></li>
-            <li><a href="Information.html">Information Use</a></li>
-            <li><a href="#">MOBILITY TECH</a></li>
-            <li><a href="#">Car list</a></li>
-          </ul>
-          <ul class="icon">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-          </ul>
-          <a href="#" class="nabar_toogleBtn">
-            <i class="fa-solid fa-bars"></i>
-          </a>
-        </nav>
-        <div id="screen">
-            <video
-              autoplay
-              loop
-              playsinline
-              style="
-                height: 100vh;
-                width: 100%;
-                object-fit: cover;
-                z-index: -3;
-                
-              "
-            >
-              <source src="./img/infv.mp4" />
-            </video>
-            <div id="textbox">
-                <span>앱을 열자마자 쉽고 빠르게</span>
-                <span> 스마트한 카셰어링 라이프 시작</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/Information.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/247e9f18da.js" crossorigin="anonymous"></script>
+        <title>COCAR</title>
+    </head>
+    <body>
+        <header>
+            <!-- 헤더 네이게이션바 -->
+            <nav id="nav_bar" class="nav_bar">
+                <div class="navbar_logo">
+                    <i class="fa-brands fa-accusoft"></i>
+                    <a href="index.html">COCAR</a>
+                </div>
+                <ul class="navbar_meun">
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="Information.html">Information Use</a></li>
+                    <li><a href="#">MOBILITY TECH</a></li>
+                    <li><a href="#">Car list</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+                <a href="#" class="nabar_toogleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+            <div id="screen">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="height: 100vh; width: 100%; object-fit: cover; z-index: -3"
+                >
+                    <source src="./img/infv.mp4" />
+                </video>
+                <div id="textbox">
+                    <span>앱을 열자마자 쉽고 빠르게</span>
+                    <span> 스마트한 카셰어링 라이프 시작</span>
+                </div>
             </div>
-          </div>
         </header>
         <!--  이용안내  -->
         <section>
@@ -121,29 +113,26 @@
                     </div>
                 </div>
             </article>
-          </section>
-            
+        </section>
 
         <footer>
             <div class="textbox">
-              <h2>COCAR</h2>
-              <hr />
-              <ul>
-                <li><a href="#">오시는길</a></li>
-      
-                <li><a href="#">문의하기</a></li>
-      
-                <li><a href="#">앱 다운로드</a></li>
-      
-                <li><a href="#">코카 윤리강령</a></li>
-              </ul>
-              <h4>© 2024 COCAR All rights reserved.</h4>
+                <h2>COCAR</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">오시는길</a></li>
+
+                    <li><a href="#">문의하기</a></li>
+
+                    <li><a href="#">앱 다운로드</a></li>
+
+                    <li><a href="#">코카 윤리강령</a></li>
+                </ul>
+                <h4>© 2024 COCAR All rights reserved.</h4>
             </div>
-          </footer>
-          <script src="./scroll.js"></script>
-          <script src="./Infscroll.js"></script>
-          <script src="./toogle.js"></script>
-          
-    
-</body>
+        </footer>
+        <script src="./scroll.js"></script>
+        <script src="./Infscroll.js"></script>
+        <script src="./toogle.js"></script>
+    </body>
 </html>
